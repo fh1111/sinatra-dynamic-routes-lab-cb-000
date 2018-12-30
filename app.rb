@@ -21,9 +21,8 @@ class App < Sinatra::Base
     final_string
   end
 
-  get "/multiply/:num1/:num2" do
-    @product = params[:num1].to_i * params[:num2].to_i
-    "#{@product}"
+  get "/say/:word1/:word2/:word3/:word4/:word5" do
+    "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
   end
 
 end
